@@ -11,3 +11,6 @@ app.use(express.json());
 app.get('/',(req,res)=>{
     res.send('cash-wave server is running')
 })
+app.listen(port, () =>{
+    console.log(`Cash-Wave is running on port ${port}`)
+})
